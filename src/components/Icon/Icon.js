@@ -20,7 +20,7 @@ export const Icon = ({ type, clickable }) => {
 
 Icon.propTypes = {
   type: PropTypes.string.isRequired,
-  clickable: PropTypes.func,
+  clickable: PropTypes.bool,
 };
 
 export default Icon;
