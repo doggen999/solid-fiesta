@@ -1,5 +1,5 @@
 # dev-environment
-Basic dev environment with Webpack and Babel 
+React POC of listing and info view
 ## Prerequisites
 Node version `16.18.1`
 
