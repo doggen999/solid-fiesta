@@ -1,4 +1,4 @@
-# dev-environment
+# solid-fiesta
 React POC of listing and info view
 ## Prerequisites
 Node version `16.18.1`
