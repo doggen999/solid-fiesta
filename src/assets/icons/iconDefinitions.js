@@ -3,8 +3,8 @@ import React from "react";
 export default (
   <defs>
     <linearGradient id="grad">
-      <stop offset="50%" stop-color="#B69F58" />
-      <stop offset="50%" stop-color="white" />
+      <stop offset="50%" stopColor="#B69F58" />
+      <stop offset="50%" stopColor="white" />
     </linearGradient>
     <symbol
       id="star_empty"

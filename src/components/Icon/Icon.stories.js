@@ -11,6 +11,8 @@ export const Primary = () => (
     <br />
     <Icon type="star_filled" />
     <br />
+    <Icon type="star_half" />
+    <br />
     <Icon type="website" />
     <br />
     <Icon type="address" />
