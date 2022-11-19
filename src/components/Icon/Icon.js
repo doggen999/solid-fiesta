@@ -7,20 +7,31 @@ import iconDefinitions from "../../assets/icons/iconDefinitions";
 
 import styles from "./Icon.module.scss";
 
-export const Icon = ({ type, clickable }) => {
+export const Icon = ({ type, clickable, small }) => {
   return type ? (
-    <svg className={classnames(styles.icon, { [styles.clickable]: clickable })}>
+    <svg
+      className={classnames(styles.icon, {
+        [styles.clickable]: clickable,
+        [styles.small]: small,
+      })}
+    >
       <use href={`#${type}`} />
       {iconDefinitions}
     </svg>
   ) : (
-    <span className={styles.icon}>☒</span>
+    <span className={classnames(styles.icon, { [styles.small]: small })}>
+      ☒
+    </span>
   );
 };
 
 Icon.propTypes = {
   type: PropTypes.string.isRequired,
   clickable: PropTypes.bool,
+  small: PropTypes.bool,
 };
 
+Icon.defaultProps = {
+  small: false,
+};
 export default Icon;
