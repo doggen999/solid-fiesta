@@ -2,7 +2,6 @@ const fs = require("fs");
 
 function content(name) {
   return `import React from 'react';
-
 import PropTypes from 'prop-types';
 
 import styles from './${name}.module.scss';
