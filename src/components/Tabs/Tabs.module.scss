@@ -1,0 +1,19 @@
+.tabs {
+  display: flex;
+  justify-content: space-around;
+
+  .tab {
+    width: 100%;
+    padding: 1.6rem 0;
+    text-align: center;
+
+    &.active {
+      border-bottom: 2px solid #b69f58;
+    }
+
+    &:hover:not(.active) {
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+}
