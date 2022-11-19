@@ -1,0 +1,41 @@
+@import '../../styles//variables.scss';
+
+.expandable {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: 0.5rem;
+    
+    font-weight: bold;
+    
+    cursor: pointer;
+    
+    &.full_width {
+      justify-content: space-between;
+    }
+
+    .icon {
+      margin-left: 1rem;
+      align-self: center;
+      transition: transform $animation;
+
+      &.expanded {
+        transform: rotateX(180deg);
+      }
+    }
+  }
+
+  .content_wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height $animation;
+  }
+
+  .content {
+    font-size: small;
+  }
+}
