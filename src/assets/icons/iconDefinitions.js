@@ -2,6 +2,10 @@ import React from "react";
 
 export default (
   <defs>
+    <linearGradient id="grad">
+      <stop offset="50%" stop-color="#B69F58" />
+      <stop offset="50%" stop-color="white" />
+    </linearGradient>
     <symbol
       id="star_empty"
       viewBox="1 0.5 16 16"
@@ -25,6 +29,20 @@ export default (
     >
       <title>filled star</title>
       <path d="M8 2.19376L9.52093 5.49113L9.63816 5.74527L9.91609 5.77822L13.5221 6.20577L10.8561 8.67121L10.6506 8.86123L10.7051 9.13574L11.4128 12.6973L8.24422 10.9237L8 10.787L7.75578 10.9237L4.58718 12.6973L5.29486 9.13574L5.34941 8.86123L5.14393 8.67121L2.47793 6.20577L6.08391 5.77822L6.36184 5.74527L6.47907 5.49113L8 2.19376Z" />
+    </symbol>
+    <symbol
+      id="star_half"
+      viewBox="1 0.5 16 16"
+      fill="url(#grad)"
+      width="16"
+      height="16"
+      stroke="#B69F58"
+    >
+      <title>half filled star</title>
+      <path
+        // fill="url(#grad)"
+        d="M8 2.19376L9.52093 5.49113L9.63816 5.74527L9.91609 5.77822L13.5221 6.20577L10.8561 8.67121L10.6506 8.86123L10.7051 9.13574L11.4128 12.6973L8.24422 10.9237L8 10.787L7.75578 10.9237L4.58718 12.6973L5.29486 9.13574L5.34941 8.86123L5.14393 8.67121L2.47793 6.20577L6.08391 5.77822L6.36184 5.74527L6.47907 5.49113L8 2.19376Z"
+      />
     </symbol>
     <symbol
       id="website"
