@@ -1,0 +1,10 @@
+.rating {
+    display: flex;
+    align-items: end;
+    
+    .number_of_ratings {
+        font-size: small;
+        margin-left: 0.4rem;
+        line-height: 1.3;
+    }
+}
