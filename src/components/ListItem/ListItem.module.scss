@@ -1,0 +1,54 @@
+.listItem {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.8rem 1.5rem;
+  box-sizing: content-box;
+  border: solid 1px transparent;
+  border-bottom: 1px solid #eee;
+
+  &:hover {
+    --hover-border:solid 1px #B69F58; 
+    border-bottom: var(--hover-border);
+    border-top: var(--hover-border);
+  }
+
+  .navigate {
+    align-self: center;
+  }
+
+  .establishmen_name {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .establishmen_rating {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .establishmen_address {
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  .appointment_duration {
+    grid-row: 2;
+    grid-column: 3;
+  }
+
+  .navigate {
+    grid-column: 4;
+    grid-row: 1 / -1;
+    
+  }
+
+  .establishmen_name, .establishmen_address {
+    --max-lines: 1;
+
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+  }
+}
