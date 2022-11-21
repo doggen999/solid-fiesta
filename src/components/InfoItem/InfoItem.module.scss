@@ -1,0 +1,15 @@
+@import "~/src/styles/variables.scss";
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+  font-size: $fontSizeSmall;
+  padding-bottom: 2rem;
+  border-bottom: solid 1px $colorSecondary;
+  .wrapper {
+    margin-left: 1.15rem;
+    display: flex;
+    line-height: $lineHeightSmallest;
+  }
+}
