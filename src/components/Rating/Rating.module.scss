@@ -1,8 +1,11 @@
+@import "~/src/styles/variables.scss";
+
 .rating {
   display: flex;
   align-items: center;
 
   .number_of_ratings {
+    font-size: $fontSizeSmaller;
     margin-left: 0.4rem;
   }
 }

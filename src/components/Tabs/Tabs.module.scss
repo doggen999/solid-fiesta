@@ -1,10 +1,11 @@
-@import "~/src/styles/index.scss";
+@import "~/src/styles/variables.scss";
 
 .tabs {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
+  font-size: $fontSizeSmall;
   background-color: $colorSecondary;
 
   .tabsHeader {
