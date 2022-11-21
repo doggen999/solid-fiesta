@@ -2,7 +2,6 @@ import React from "react";
 import { faker } from "@faker-js/faker";
 
 import Tabs from "./index";
-import Tab from "../Tab";
 import InfoItem from "../InfoItem";
 import InfoItems from "../InfoItems";
 
