@@ -32,7 +32,7 @@ export const Expandable = ({ label, children, fullWidth, expanded }) => {
         <div
           className={classnames(styles.icon, { [styles.expanded]: isExpanded })}
         >
-          <Icon type="chevron_down" />
+          <Icon type="chevron_right_down" />
         </div>
       </div>
       <div

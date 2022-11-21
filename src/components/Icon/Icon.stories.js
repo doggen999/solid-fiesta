@@ -1,40 +1,30 @@
 import React from "react";
+import { faker } from "@faker-js/faker";
+
 import Icon from "./index";
 
 export default {
   title: "Components/Icon",
   component: Icon,
 };
+
 export const Primary = () => (
   <>
-    <Icon type="star_empty" />
-    <br />
-    <Icon type="star_filled" />
-    <br />
-    <Icon type="star_half" />
-    <br />
     <Icon type="website" />
-    <br />
     <Icon type="address" />
-    <br />
-    <Icon type="chevron_left" clickable />
-    <br />
-    <Icon type="chevron_down" clickable />
-    <br />
-    <Icon type="chevron_right" clickable />
-    <br />
-    <Icon type="heart" clickable />
-    <br />
+    <Icon type="chevron_left_white" />
+    <Icon type="chevron_left" />
+    <Icon type="chevron_right_down" />
+    <Icon type="chevron_right_small" />
+    <Icon type="heart" />
     <Icon type="phone" />
-    <br />
-    <Icon type="settings" clickable />
-    <br />
+    <Icon type="settings" />
+    <Icon type="star_empty_small" />
+    <Icon type="star_empty" />
+    <Icon type="star_filled_small" />
+    <Icon type="star_filled" />
+    <Icon type="star_half_small" />
+    <Icon type="star_half" />
     <Icon type="time" />
-    <br />
-    <Icon />
   </>
 );
-
-export const ClickableIcon = () => <Icon type="heart" clickable />;
-
-export const MissingIconType = () => <Icon />;
