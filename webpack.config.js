@@ -26,11 +26,8 @@ module.exports = {
         use: ["style-loader", "css-loader?modules", "sass-loader"],
       },
       {
-        test: /\.(png|jp(e*)g|svg|gif)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: { name: "images/[hash]-[name].[ext]" },
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
           },
         ],
       },
