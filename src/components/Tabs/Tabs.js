@@ -9,18 +9,26 @@ export const Tabs = ({ children }) => {
 
   return (
     <div className={styles.tabs}>
-      {children.map((child, index) => (
-        <div
-          onClick={() => {
-            setActiveTab(index);
-          }}
-          className={classnames(styles.tab, {
-            [styles.active]: activeTab === index,
-          })}
-        >
-          {child}
-        </div>
-      ))}
+      <div className={styles.tabsHeader}>
+        {children.map((child, index) => (
+          <div
+            key={`tab_${index}`}
+            onClick={() => {
+              setActiveTab(index);
+            }}
+            className={classnames(styles.tab, {
+              [styles.active]: activeTab === index,
+            })}
+          >
+            {`${child.props.label[0].toUpperCase()}${child.props.label
+              .slice(1)
+              .toLowerCase()}`}
+          </div>
+        ))}
+      </div>
+      <div className={styles.tabsContent}>
+        {children[activeTab].props.children}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,17 @@
 .tabs {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+
+  .tabsHeader {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
+
+  .tabsContent {
+    padding: 0 1.6rem;
+  }
 
   .tab {
     width: 100%;
