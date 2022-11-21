@@ -1,0 +1,10 @@
+@import "~/src/styles/variables.scss";
+
+.info {
+  width: 50%;
+
+  .pitch {
+    padding-top: 2rem;
+    line-height: $lineHeightLarge;
+  }
+}
