@@ -1,0 +1,35 @@
+@import "~/src/styles/variables.scss";
+
+.label {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: $lineHeightSmallest;
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.6rem;
+  span:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+  .critera {
+    padding-left: 1rem;
+    line-height: $lineHeightSmaller;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .criterion {
+    &:hover:not(.disabled) {
+      border-bottom: 1px solid $textColorBlack;
+    }
+    &.disabled {
+      color: grey;
+    }
+  }
+
+  .active {
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+}
