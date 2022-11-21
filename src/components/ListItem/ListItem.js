@@ -28,14 +28,16 @@ export const ListItem = ({ establishment, appointment }) => {
       <div className={styles.appointment_time}>
         {formatTime(appointment.time)}
       </div>
-      <div className={styles.establishmen_name}>{establishment.name}</div>
+      <h2 className={styles.establishmen_name}>{establishment.name}</h2>
       <div className={styles.establishmen_rating}>
         <Rating
           rating={establishment.rating.score}
           numberOfRatings={establishment.rating.numberOfRatings}
         />
       </div>
-      <div className={styles.establishmen_address}>{establishment.address}</div>
+      <div className={styles.establishmen_address}>
+        {establishment.address.streetAddress}
+      </div>
       <div className={styles.appointment_price}>
         {formatPrice(appointment.price)}
       </div>
@@ -43,7 +45,7 @@ export const ListItem = ({ establishment, appointment }) => {
         {formatDuration(appointment.duration)}
       </div>
       <div className={styles.navigate}>
-        <Icon type="chevron_right" />
+        <Icon type="chevron_right_small" />
       </div>
     </div>
   );
@@ -52,11 +54,15 @@ export const ListItem = ({ establishment, appointment }) => {
 ListItem.propTypes = {
   establishment: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    address: PropTypes.string.isRequired,
+    address: PropTypes.shape({
+      streetAddress: PropTypes.string,
+      zipCode: PropTypes.string,
+      city: PropTypes.string,
+    }).isRequired,
   }),
   appointment: PropTypes.shape({
     time: PropTypes.instanceOf(Date),
-    price: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
     duration: PropTypes.number.isRequired,
   }),
 };

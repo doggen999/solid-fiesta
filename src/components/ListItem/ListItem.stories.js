@@ -6,6 +6,7 @@ import ListItem from "./index";
 export default {
   title: "Components/ListItem",
   component: ListItem,
+  parameters: { actions: { handles: ["click"] } },
 };
 
 export const Primary = () => (
