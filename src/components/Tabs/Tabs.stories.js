@@ -3,7 +3,6 @@ import { faker } from "@faker-js/faker";
 
 import Tabs from "./index";
 import InfoItem from "../InfoItem";
-import InfoItems from "../InfoItems";
 
 export default {
   title: "Components/Tabs",
@@ -13,9 +12,7 @@ export default {
 export const Primary = () => (
   <Tabs>
     <div label="info">
-      <InfoItems>
-        <InfoItem iconType="address">This is an address</InfoItem>
-      </InfoItems>
+      <InfoItem iconType="address">This is an address</InfoItem>
       <div>{faker.lorem.paragraphs(2)}</div>
     </div>
     <div label="schedule">
