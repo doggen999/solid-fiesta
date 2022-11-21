@@ -6,11 +6,21 @@ module.exports = {
     "@storybook/addon-interactions",
     /*  as '.module.' is needed in file name for .scss-files
     (Comoponent.module.scss) to make css modules work in StoryBook */
+    // ...but app.scss is bundled without .module. in file name... :o
     {
       name: `@storybook/preset-scss`,
       options: {
         rule: {
-          test: /\.module\.s[c|a]ss$/,
+          test: /(?<!\.module).s[ca]ss$/,
+        },
+      },
+    },
+    // ...for the rest of the imports, that are built with .module. in the file name
+    {
+      name: `@storybook/preset-scss`,
+      options: {
+        rule: {
+          test: /\.module\.s[ca]ss$/,
         },
         cssLoaderOptions: {
           modules: {
