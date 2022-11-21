@@ -4,6 +4,7 @@
 
   img {
     width: 100%;
+    height: 100%;
   }
   .picture_wrapper {
     grid-area: 1/1;
@@ -11,11 +12,12 @@
 
   .content {
     grid-area: 1/1;
-    padding: 2.254rem 1.805rem 2.5rem 1.6rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    padding: 2.254rem 1.805rem;
 
     .icons {
       display: flex;
@@ -24,10 +26,6 @@
 
     .name_and_rating {
       color: white;
-      .name {
-        font-size: 22px;
-        line-height: 30px;
-      }
     }
   }
 }

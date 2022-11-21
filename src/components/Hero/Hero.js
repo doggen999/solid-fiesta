@@ -22,10 +22,14 @@ export const Hero = ({ name, rating }) => (
     </div>
     <div className={styles.content}>
       <div className={styles.icons}>
+          <Icon
+            type="chevron_left_white"
+            clickable
+          />
           <Icon disabled type="heart" />
       </div>
       <div className={styles.name_and_rating}>
-        <div className={styles.name}>{name}</div>
+          <h1 className={styles.name}>{name}</h1>
         <div className={styles.rating}>
           <Rating
             rating={rating.score}
