@@ -1,0 +1,31 @@
+@import "~/src/styles/variables.scss";
+
+.label {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: $lineHeightSmallest;
+}
+.sort {
+  display: flex;
+  justify-content: space-between;
+  span:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+  .critera {
+    padding-left: 1rem;
+    line-height: $lineHeightSmaller;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .criterion {
+    &:hover {
+      border-bottom: 1px solid $textColorBlack;
+    }
+  }
+
+  .active {
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+}
