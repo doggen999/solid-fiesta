@@ -3,6 +3,7 @@
 .rating {
   display: flex;
   align-items: center;
+  line-height: $lineHeightSmallest;
 
   .number_of_ratings {
     font-size: $fontSizeSmaller;

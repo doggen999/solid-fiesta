@@ -34,6 +34,7 @@
     grid-column: 2;
 
     font-size: $fontSizeSmaller;
+    line-height: $lineHeightSmaller;
     color: $textColorGrey;
   }
 
@@ -42,6 +43,7 @@
     grid-column: 2;
 
     font-size: $fontSizeSmall;
+    line-height: $lineHeightRegular;
     color: $textColorGrey;
   }
 
@@ -50,15 +52,18 @@
     grid-column: 3;
 
     font-size: $fontSizeSmaller;
+    line-height: $lineHeightSmall;
   }
 
   .appointment_price {
     font-size: $fontSizeSmall;
+    line-height: $lineHeightRegular;
     font-weight: normal;
   }
 
   .appointment_time {
     font-size: $fontSizeLarge;
+    line-height: $lineHeightRegular;
     font-weight: normal;
   }
 
