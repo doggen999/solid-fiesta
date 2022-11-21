@@ -1,4 +1,4 @@
-@import '../../styles//variables.scss';
+@import "../../styles/variables.scss";
 
 .expandable {
   display: flex;
@@ -7,6 +7,8 @@
   .header {
     display: flex;
     flex-direction: row;
+    
+    padding: 1.6rem 1.6rem;
     
     margin-bottom: 0.5rem;
     
@@ -33,9 +35,7 @@
     height: 0;
     overflow: hidden;
     transition: height $animation;
-  }
-
-  .content {
-    font-size: small;
+    
+    padding: 0 3.2rem;
   }
 }

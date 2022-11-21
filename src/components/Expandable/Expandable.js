@@ -6,13 +6,14 @@ import Icon from "../Icon";
 
 import styles from "./Expandable.module.scss";
 
-export const Expandable = ({ label, children, fullWidth, expanded }) => {
-  const [isExpanded, setIsExpanded] = useState(expanded);
+export const Expandable = ({
+  label,
+  children,
+  fullWidth,
+  expanded,
+  onClick,
+}) => {
   const [contentHeight, setContentHeight] = useState(0);
-
-  const toggleIsExpanded = () => {
-    setIsExpanded((isExpanded) => !isExpanded);
-  };
 
   const measuredRef = useCallback((node) => {
     if (node !== null) {
@@ -23,20 +24,20 @@ export const Expandable = ({ label, children, fullWidth, expanded }) => {
   return (
     <div className={styles.expandable}>
       <div
-        onClick={toggleIsExpanded}
+        onClick={onClick}
         className={classnames(styles.header, {
           [styles.full_width]: fullWidth,
         })}
       >
         <div>{label}</div>
         <div
-          className={classnames(styles.icon, { [styles.expanded]: isExpanded })}
+          className={classnames(styles.icon, { [styles.expanded]: expanded })}
         >
           <Icon type="chevron_right_down" />
         </div>
       </div>
       <div
-        style={isExpanded ? { height: `${contentHeight}px` } : { height: "0" }}
+        style={expanded ? { height: `${contentHeight}px` } : { height: "0" }}
         className={styles.content_wrapper}
       >
         <div ref={measuredRef} className={styles.content}>
@@ -56,6 +57,7 @@ Expandable.propTypes = {
   ]).isRequired,
   expanded: PropTypes.bool,
 };
+
 Expandable.defaultProps = {
   expanded: false,
   fullWidth: false,
