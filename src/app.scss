@@ -1,4 +1,8 @@
 @import "./styles/index.scss";
 
 .app {
+  transition: transform 0.5s ease-in-out;
+  &.viewInfo {
+    transform: translateX(-100vw);
+  }
 }
