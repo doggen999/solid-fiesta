@@ -18,7 +18,7 @@ export const Rating = ({ numberOfRatings, rating, numberOfRatingSteps }) => {
         ? "star_filled"
         : "star_empty";
 
-    stars.push(<Icon small key={`rating-star_${i}`} type={starType} />);
+    stars.push(<Icon key={`rating-star_${i}`} type={starType} />);
   }
   return (
     <div className={styles.rating}>
