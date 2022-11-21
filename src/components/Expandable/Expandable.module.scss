@@ -7,15 +7,11 @@
   .header {
     display: flex;
     flex-direction: row;
-    
+
     padding: 1.6rem 1.6rem;
-    
-    margin-bottom: 0.5rem;
-    
-    font-weight: bold;
-    
+
     cursor: pointer;
-    
+
     &.full_width {
       justify-content: space-between;
     }
@@ -35,7 +31,7 @@
     height: 0;
     overflow: hidden;
     transition: height $animation;
-    
+
     padding: 0 3.2rem;
   }
 }

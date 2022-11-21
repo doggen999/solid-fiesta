@@ -1,17 +1,23 @@
+@import "~/src/styles/index.scss";
+
 .tabs {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  background-color: $colorSecondary;
 
   .tabsHeader {
     font-weight: normal;
     display: flex;
     flex-direction: row;
     margin-bottom: 2rem;
+    background-color: $colorWhite;
   }
 
   .tabsContent {
     padding: 0 1.6rem;
+    background-color: $colorWhite;
   }
 
   .tab {
@@ -20,7 +26,7 @@
     text-align: center;
 
     &.active {
-      border-bottom: 2px solid #b69f58;
+      border-bottom: 2px solid $colorPrimary;
     }
 
     &:hover:not(.active) {

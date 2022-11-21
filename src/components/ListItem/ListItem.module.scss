@@ -1,4 +1,4 @@
-@import "../../styles/index.scss";
+@import "~/src/styles/index.scss";
 
 .listItem {
   display: grid;
@@ -15,9 +15,9 @@
   padding: 1.6rem 0;
 
   &:hover {
-    --hover-border:solid 1px #B69F58; 
-    border-bottom: var(--hover-border);
-    border-top: var(--hover-border);
+    $hover-border: solid 1px $colorPrimary;
+    border-bottom: $hover-border;
+    border-top: $hover-border;
   }
 
   .navigate {
