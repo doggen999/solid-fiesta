@@ -1,6 +1,10 @@
 @import "~/src/styles/variables.scss";
 
 .listHeader {
+  position: sticky;
+  top: 0;
+  background-color: white;
+
   .topRow {
     display: flex;
     flex-direction: row;

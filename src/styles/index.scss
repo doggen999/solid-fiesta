@@ -25,5 +25,10 @@ html {
     h2 {
       font-size: $fontSizeLarge;
     }
+
+    a {
+      color: $textColorBlack;
+      text-decoration: none;
+    }
   }
 }
