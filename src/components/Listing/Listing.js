@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { DispatchProvider, StateContext } from "../../app";
+import { Link } from "react-router-dom";
+
+import { StateContext } from "../../app";
 import { useContext } from "react";
-import { setSelectedEstablishment } from "../../actions/actions";
 
 import ListHeader from "../ListHeader";
 import List from "../List";
@@ -13,7 +14,6 @@ import styles from "./Listing.module.scss";
 
 export const Listing = ({ header }) => {
   const state = useContext(StateContext);
-  const dispatch = useContext(DispatchProvider);
 
   return (
     <div className={styles.listing}>
@@ -66,14 +66,11 @@ export const Listing = ({ header }) => {
           })
           .map((item, index) => {
             return (
-              <div
-                key={`list_item_${index}`}
-                onClick={() => {
-                  dispatch(setSelectedEstablishment(item.id));
-                }}
-              >
-                <ListItem {...item} />
-              </div>
+              <Link key={`list_item_${index}`} to={`info/${item.id}`}>
+                <div>
+                  <ListItem {...item} />
+                </div>
+              </Link>
             );
           })}
       </List>
