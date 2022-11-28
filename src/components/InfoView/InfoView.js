@@ -20,7 +20,7 @@ export const InfoView = () => {
   )[0];
 
   return (
-    <div lassName={styles.InfoView}>
+    <div className={styles.InfoView}>
       <Hero
         name={selectedEstablishment.establishment.name}
         rating={selectedEstablishment.establishment.rating}
