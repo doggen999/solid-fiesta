@@ -5,7 +5,6 @@
   grid-template-columns: auto 1fr auto auto;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0.8rem 1.5rem;
-  align-items: center;
 
   border: solid 1px transparent;
   border-bottom: 1px solid #eee;
@@ -62,7 +61,7 @@
   }
 
   .appointment_time {
-    font-size: $fontSizeLarge;
+    font-size: $fontSizeSmall;
     line-height: $lineHeightRegular;
     font-weight: normal;
   }
