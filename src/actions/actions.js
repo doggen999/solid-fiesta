@@ -17,11 +17,6 @@ export const setSortingAscending = (value) => ({
   payload: value,
 });
 
-export const setSelectedEstablishment = (index) => ({
-  type: TYPES.SET_SELECTED_ESTABLISHMENT,
-  payload: index,
-});
-
 export const setShowInfo = (value) => ({
   type: TYPES.SET_SHOWINFO,
   payload: value,

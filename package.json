@@ -25,7 +25,8 @@
   "homepage": "https://github.com/doggen999/dev-environment#readme",
   "dependencies": {
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "react-router-dom": "~5.3.4"
   },
   "devDependencies": {
     "@babel/core": "~7.14.6",
