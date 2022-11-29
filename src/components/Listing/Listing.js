@@ -66,11 +66,11 @@ export const Listing = ({ header }) => {
           })
           .map((item, index) => {
             return (
-              <Link key={`list_item_${index}`} to={`info/${item.id}`}>
-                <div>
+              <div className={styles.listItemLink}>
+                <Link key={`list_item_${index}`} to={`info/${item.id}`}>
                   <ListItem {...item} />
-                </div>
-              </Link>
+                </Link>
+              </div>
             );
           })}
       </List>
