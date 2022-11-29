@@ -1,4 +1,20 @@
+@import "~/src/styles/variables.scss";
+
 .listing {
   height: 100vh;
   overflow: scroll;
+
+  .listItemLink {
+    border: solid 1px transparent;
+    border-bottom: 1px solid #eee;
+
+    &:hover {
+      $hover-border: solid 1px $colorPrimary;
+      border-bottom: $hover-border;
+
+      &:not(:first-child) {
+        border-top: $hover-border;
+      }
+    }
+  }
 }
